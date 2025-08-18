@@ -5,18 +5,18 @@ function volume_sphere() {
     
     // Step 2: Validate input
     if (isNaN(radius) || radius < 0) {
-        document.getElementById("output").value = 'NaN';
+        document.getElementById("volume").value = 'NaN';
         return;
     }
     
     // Step 3: Calculate volume
-    let volume = (4/3) * Math.PI * Math.pow(radius, 3);
+    let ans = (4/3) * Math.PI * Math.pow(radius, 3);
     
     // Step 4: Round the result
-    volume = volume.toFixed(4);
+    ans = ans.toFixed(4);
     
     // Step 5: Display the result
-    document.getElementById("output").value = volume;
+    document.getElementById("volume").value = ans;
 }
 } 
 
