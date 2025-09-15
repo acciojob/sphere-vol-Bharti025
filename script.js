@@ -1,7 +1,7 @@
 function volume_sphere() {
     //Write your code here
 	// Step 1: Retrieve radius value
-    let radius = parseFloat(document.getElementById("radius").value);
+    let radius = parseInt(document.getElementById("radius").value);
     
     // Step 2: Validate input
     if (isNaN(radius) || radius < 0) {
