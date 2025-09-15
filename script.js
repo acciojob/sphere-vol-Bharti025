@@ -20,4 +20,13 @@ function volume_sphere() {
 }
 } 
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+window.onload = document.getElementById('MyForm').onsubmit =
+	function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        volume_sphere(); // Call the function
+    };
+};
+
+
+
+
